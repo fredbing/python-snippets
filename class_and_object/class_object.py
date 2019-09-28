@@ -24,6 +24,7 @@ if __name__ == '__main__':
     main()
 '''
 
+# In Python3, class MyDog is equivalent to class MyDog(object)
 class MyDog(object):
 
     def __init__(self, name, color, weight):
@@ -37,7 +38,7 @@ class MyDog(object):
     def show_name(self):
         print("Dog " + self.name)
 
-dog1 = MyDog("Murphy", "Brown with White", 58)
+dog1 = MyDog("Murphy", "Brown", 58)
 dog2 = MyDog("Apple", "Black", 39)
 
 dog1.show_name()
