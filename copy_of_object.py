@@ -8,20 +8,20 @@ copied_obj = ori_obj
 
 copied_obj[2][2] = 9
 
-print('Old List:', ori_obj)
-print('ID of Old List:', id(ori_obj))
+print('Original object:', ori_obj)
+print('ID of Original object:', id(ori_obj))
 
-print('New List:', copied_obj)
-print('ID of New List:', id(copied_obj))
+print('Copied object:', copied_obj)
+print('ID of Copied object:', id(copied_obj))
 
 '''
 The output of running above program:
 
-Old List: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-ID of Old List: 123456789234567
+Original object: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ID of Original object: 123456789234567
 
-New List: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-ID of New List: 123456789234567
+Copied object: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ID of Copied object: 123456789234567
 
 In the above programme, if any change is made to either objects, the change is visible in both.
 
@@ -41,14 +41,14 @@ import copy
 ori_obj = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 copied_obj = copy.copy(ori_obj)
 
-print("Old list:", ori_obj)
-print("New list:", copied_obj)
+print("Original object:", ori_obj)
+print("Copied object:", copied_obj)
 
 '''
 The output of running above program:
 
-Old list: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-New list: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Original object: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Copied object: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 '''
 
@@ -59,14 +59,14 @@ copied_obj = copy.copy(ori_obj)
 
 ori_obj.append([4, 4, 4])
 
-print("Old list:", ori_obj)
-print("New list:", copied_obj)
+print("Original object:", ori_obj)
+print("Copied object:", copied_obj)
 
 '''
 The output of running above program:
 
-Old list: [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]
-New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+Original object: [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]
+Copied object: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 
 '''
 
@@ -77,14 +77,14 @@ copied_obj = copy.copy(ori_obj)
 
 ori_obj[1][1] = 'AA'
 
-print("Old list:", ori_obj)
-print("New list:", copied_obj)
+print("Original object:", ori_obj)
+print("Copied object:", copied_obj)
 
 '''
 The output of running above program:
 
-Old list: [[1, 1, 1], [2, 'AA', 2], [3, 3, 3]]
-New list: [[1, 1, 1], [2, 'AA', 2], [3, 3, 3]]
+Original object: [[1, 1, 1], [2, 'AA', 2], [3, 3, 3]]
+Copied object: [[1, 1, 1], [2, 'AA', 2], [3, 3, 3]]
 
 '''
 
@@ -100,14 +100,14 @@ import copy
 ori_obj = [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 copied_obj = copy.deepcopy(ori_obj)
 
-print("Old list:", ori_obj)
-print("New list:", copied_obj)
+print("Original object:", ori_obj)
+print("Copied object:", copied_obj)
 
 '''
 The output of running above program:
 
-Old list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
-New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+Original object: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+Copied object: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 
 '''
 
@@ -118,13 +118,13 @@ copied_obj = copy.deepcopy(ori_obj)
 
 ori_obj[1][0] = 'BB'
 
-print("Old list:", ori_obj)
-print("New list:", copied_obj)
+print("Original object:", ori_obj)
+print("Copied object:", copied_obj)
 
 '''
 The output of running above program:
 
-Old list: [[1, 1, 1], ['BB', 2, 2], [3, 3, 3]]
-New list: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
+Original object: [[1, 1, 1], ['BB', 2, 2], [3, 3, 3]]
+Copied object: [[1, 1, 1], [2, 2, 2], [3, 3, 3]]
 
 '''
