@@ -16,9 +16,14 @@ print(my_dictionary)
 # access elements in dictioary
 print(my_dictionary[1], my_dictionary['name'])
 print(my_dictionary[3])
+print(my_dictionary.get('name'))
+print(my_dictionary.get(2))
 
 # add an item to the dictionary
 my_dictionary['city'] = 'Corcoran'
+print(my_dictionary)
+my_dictionary['Mary'] = 65
+my_dictionary[65] = 'Mary'
 print(my_dictionary)
 
 # delete elements
