@@ -2,7 +2,7 @@
 This is a Python set operation example
 By Binggang Liu
 
-A set is a collection of unique items without order, so index does not work for sets.
+A set is a collection of unordored unique items, so index does not work for sets.
 Like dictionary, sets use curly brackets, but the elements are just indivisual items, not value-pairs.
 The indivisual elements in a set can be sets, dictionaries, lists, tuples, etc.
 
