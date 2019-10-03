@@ -45,7 +45,7 @@ while True:
 
 # Read file from local directory:
 try:
-    with open('/Users/binggangliu/Downloads/DataEngineer.txt') as input_file:
+    with open('/Users/binggangliu/Downloads/DataEngineerpdf.pdf') as input_file:
         my_input_file = input_file.read()
         # print(my_input_file)
         #    print(input_file.read())

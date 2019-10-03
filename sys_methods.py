@@ -4,7 +4,7 @@ By Binggang Liu
 '''
 
 import sys
-
+'''
 print(sys.platform)
 print(sys.version)
 print(sys.path)
@@ -32,3 +32,19 @@ if len(sys.argv) > 1:
     print('Total is ', total)
 else:
     print('No argumants provided')
+'''
+
+# Below is an example of using stdin.readline() method to do interative tasks
+
+
+def tip():
+    print('How much is your meal?')
+    cost = int(sys.stdin.readline())
+    print('What percentage do you want to tip? Use integer, leave off percent sign')
+    tip_percentage = int(sys.stdin.readline())
+    tip_amount = cost*tip_percentage/100
+#    print('You need to tip ' + str(tip_amount) + ' dollars') # it works out the same way by using this option to print
+    print('You need to tip %s' % tip_amount + ' dollars')
+
+
+tip()
