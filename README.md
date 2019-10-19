@@ -1,2 +1,2 @@
 # python-snippets
-These are Python snippets for my reference
+These are Python snippets for reference
