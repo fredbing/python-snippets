@@ -1,5 +1,5 @@
 '''
-Script for renaming files in a directory
+Snippets for renaming files in a directory
 By Binggang Liu
 '''
 
