@@ -46,7 +46,7 @@ dict = {'alias': 'let you give your own name to a command or sequence of command
         'uname': 'obtains system info of the Linux computer',
         'w': 'lists the currently logged in users',
         'wc': 'short for word count, count newlines, words and bytes of a file',
-        'whoami': 'find out who you are logged in as or who is logged into an unnamed Linux terminal'
+        'whoami': 'see who you are logged in as or who is logged into an unnamed Linux terminal'
         }
 
 '''
