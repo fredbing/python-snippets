@@ -7,7 +7,6 @@ import csv
 
 dict = {'bin/hadoop fs <args>': 'invoke FS shell',
         'hdfs dfs version': 'print the Hadoop version',
-
         'hdfs dfs -appendToFile <localsrc> ... <dst>': 'append src(s) from local to destination; reads input from stdin and appends to destination',
         'hdfs dfs -appendToFile localfile /user/hadoop/hadoopfile': '(example) append single src from local file system to the destination file system',
         'hdfs dfs -appendToFile localfile hdfs://nn.example.com/hadoop/hadoopfile': '(example) append single src from local to the destination file system',
