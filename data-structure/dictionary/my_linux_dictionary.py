@@ -57,11 +57,20 @@ for key, val in dict.items():
 
 # write to excel worksheet with xlsxwriter
 excel_workbook = xlsxwriter.Workbook(
-    '/Users/binggangliu/gitprojects/commands.xlsx')
+    '/Users/binggangliu/gitprojects/linux_commands.xlsx')
 excel_worksheet = excel_workbook.add_worksheet()
 
 row = 1
 col = 0
+
+cell_format_bold = excel_workbook.add_format({'bold': True, 'italic': False})
+
+excel_worksheet.write('A1', 'Linux Shell Commands', cell_format_bold)
+excel_worksheet.write('B1', 'Descriptions', cell_format_bold)
+
+excel_worksheet.set_column('A:A', 20)
+excel_worksheet.set_column('B:B', 65)
+
 
 for key in dict.keys():
     row += 1
