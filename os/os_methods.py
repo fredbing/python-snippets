@@ -5,6 +5,7 @@ By Binggang Liu
 
 import os
 from datetime import datetime
+import glob
 
 '''
 # print out the current working directory
@@ -15,6 +16,16 @@ print(os.environ.get('HOME'))
 
 # change the current working directory
 os.chdir('/Users/binggangliu/Downloads')
+
+# another way to change path (directory)
+os.getcwd() # return current working directory: e.g. '/Users/binggangliu'
+new_path = os.path.join(os.getcwd(),'./Downloads')
+os.chdir(new_path) # will change the cwd to '/Users/binggangliu/Downloads'
+
+# find files (e.g. excel xlsx files) in directory
+os.chdir("/Users/binggangliu")
+for file in glob.glob("*.xlsx"):
+    print(file)
 
 # list the files in the current working directory
 print(os.listdir())
