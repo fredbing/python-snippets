@@ -5,6 +5,7 @@ thread example
 from threading import Thread
 import time
 
+
 def timer(name, delay, repeat):
     print("Timer: " + name + " started")
     while repeat > 0:
@@ -27,4 +28,3 @@ def main():
 
 if __name__ == 'main--':
     main()
-    
